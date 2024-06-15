@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            .c1{
+                height:400px;
+                background-color: black;
+                display: flex;
+                justify-items: center;
+                justify-content:space-between;
+                border:solid black;
+            }
+            .c2{
+                height: 200px;
+                width: 200px;
+                background-color:aliceblue;
+                text-align: center; 
+                margin-top: 95px;
+                margin-left: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="c1">
+            <div class="c2" onclick="onclc()"><h3>DIV1</h3></div>
+            <div class="c2" onmouseover="mouseover()"><h3>DIV2</h3></div>
+            <div class="c2" ondblclick="dblclick()"><h3>DIV3</h3></div> 
+        </div>
+        <script>
+            let onclc=function(){
+                console.log("click")
+            }
+            let mouseover=function(){
+                console.log("mouseover")
+            }
+            let dblclick=function(){
+                console.log("dbl click")
+            }
+        </script>
+    </body>
+</html>
